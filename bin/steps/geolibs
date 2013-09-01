@@ -69,10 +69,8 @@ fi
 # Installing GEOS  #
 ####################
 
-if (check-geo-library "geos") then
-    puts-step "Found geo dependency: GEOS 3.3.5"
-    fetch-geo-library "geos-3.3" "geos-3.3-heroku.tgz"
-fi
+puts-step "Found geo dependency: GEOS 3.3.5"
+fetch-geo-library "geos-3.3" "geos-3.3-heroku.tgz"
 
 ###################
 # Installing GDAL #
